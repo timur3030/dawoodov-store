@@ -1,4 +1,4 @@
-.kitchens {
+.boxes {
   padding-top: 114px;
   &__content {
     display: grid;
@@ -36,6 +36,19 @@
   }
   &__img {
     height: 510px;
-    background: url(../img/kitchen.webp) center center/cover no-repeat;
+    background: url(../img/box.webp) center center/cover no-repeat;
+    position: relative;
+  }
+  &__img::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
   }
 }

@@ -1,12 +1,12 @@
-.kitchens {
+.wardrobes {
   padding-top: 114px;
   &__content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
   }
   &__text {
     padding: 0 28.5px;
-    text-align: end;
+    text-align: start;
   }
   &__title {
     font-family: "Roboto Condensed", sans-serif;
@@ -36,6 +36,6 @@
   }
   &__img {
     height: 510px;
-    background: url(../img/kitchen.webp) center center/cover no-repeat;
+    background: url(../img/wardrobe.webp) center center/cover no-repeat;
   }
 }
