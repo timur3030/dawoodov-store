@@ -1,0 +1,44 @@
+.kitchens {
+  // position: relative;
+  // display: flex;
+  // align-items: center;
+  padding: 114px 0;
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  &__text {
+    padding: 0 28.5px;
+    text-align: end;
+  }
+  &__title {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 0.85;
+  }
+  &__info {
+    margin-top: 57px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  &__btn {
+    margin-top: 57px;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1;
+    border: 1px solid #000;
+    padding: 19px 28.5px;
+    transition: all 0.5s;
+  }
+  &__btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  &__img {
+    height: 510px;
+    background: url(../img/kitchen.webp) center center/cover no-repeat;
+  }
+}
