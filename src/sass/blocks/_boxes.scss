@@ -1,5 +1,6 @@
 .boxes {
   padding-top: 114px;
+  scroll-margin-top: 51.5px;
   &__content {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -35,7 +36,7 @@
     background-color: rgba(0, 0, 0, 0.05);
   }
   &__img {
-    height: 510px;
+    min-height: calc(100svh - 279.5px);
     background: url(../img/box.webp) center center/cover no-repeat;
     position: relative;
   }

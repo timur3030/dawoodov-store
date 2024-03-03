@@ -1,5 +1,6 @@
 .wardrobes {
   padding-top: 114px;
+  scroll-margin-top: 51.5px;
   &__content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -35,7 +36,7 @@
     background-color: rgba(0, 0, 0, 0.05);
   }
   &__img {
-    height: 510px;
+    min-height: calc(100svh - 279.5px);
     background: url(../img/wardrobe.webp) center center/cover no-repeat;
   }
 }
