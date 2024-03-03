@@ -4,4 +4,9 @@
   padding-bottom: 30px;
 
   color: #fff;
+  &__title {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 }
