@@ -3,7 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DaWoodov</title>
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="icons/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="icons/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="icons/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="icons/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="icons/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="icons/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="icons/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="icons/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="icons/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="icons/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icons/favicon/manifest.json" />
+
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="icons/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>DaWOODov</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -96,14 +175,18 @@
         <div class="about__content black">
           <h3 class="about__title">О нас</h3>
           <p>
-            DaWoodov Store - компания производитель дизайнерской мебели на рынке
-            с 2018 года. Компания уже успела завоевать любовь заказчиков и стать
-            одной из топовых фирм - производителей мебели.
+            DaWoodov Store - компания производитель дизайнерской мебели на
+            высокотехнологичном оборудовании. На рынке с 2018 года. Компания уже
+            успела завоевать любовь заказчиков и стать одной из топовых фирм -
+            производителей мебели.
           </p>
           <p>
             Мы поможем превратить Ваш дом или квартиру в уютное гнёздышко с
             помощью дизайнерской мебели, основанной на трансформации из одного
             вида в другой, занимая ограниченное место максимально эффективно.
+          </p>
+          <p>
+            Мы работаем с производителями, дизайнерами и с частными клиентами.
           </p>
         </div>
       </section>
@@ -114,24 +197,91 @@
             Все этапы производства организованы в рамках собственного цеха на
             высокотехнологичном оборудовании
           </h2>
-          <video
-            class="news__video"
-            src="video/manufacture.mp4"
-            autoplay
-            loop
-            playsinline
-            muted="true"
-          ></video>
+          <video class="news__video" autoplay loop playsinline muted="true">
+            <source src="video/manufacture.webm" type="video/webm" />
+            <source src="video/manufacture.mp4" type="video/mp4" />
+          </video>
         </div>
       </section>
     </main>
 
     <footer class="footer" id="footer">
       <div class="container">
-        <h3 class="footer__title">DaWoodov</h3>
-        <div>store</div>
-        <div>Махачкала, проспект Казбекова 53</div>
-        <div>DaWoodov Store © 2024 г.</div>
+        <div class="footer__title">DaWoodov</div>
+        <div class="footer__subtitle">store</div>
+
+        <div class="footer__row">
+          <form action="#" class="footer__form">
+            <div class="footer__form-title">Форма обратной связи</div>
+            <div class="footer__form-text">
+              Здесь вы всегда можете задать любые интересующие вопросы
+            </div>
+            <input
+              required
+              name="tel"
+              id="tel"
+              type="number"
+              class="input"
+              placeholder="Введите номер телефона"
+            />
+            <textarea
+              required
+              class="textarea"
+              name="text"
+              id="text"
+              cols="30"
+              rows="5"
+              placeholder="Ваш вопрос"
+            ></textarea>
+            <button class="footer__form-btn">Отправить</button>
+          </form>
+
+          <div class="footer__links">
+            <div class="footer__form-title">Разделы сайта</div>
+            <div class="footer__link">
+              <h3>Мебель под ключ:</h3>
+              <div class="footer__btns">
+                <a class="footer__btn" href="https://wa.me/79882916868">
+                  <img src="icons/whatsapp.svg" alt="whatsapp" />
+                  <span>Whatsapp</span>
+                </a>
+                <a class="footer__btn" href="tel:+79882916868">
+                  <img src="icons/telephone.svg" alt="telephone" />
+                  <span>8 (988) 291-68-68</span>
+                </a>
+              </div>
+            </div>
+            <div class="footer__link">
+              <h3>Производство мебельных фасадов:</h3>
+              <div class="footer__btns">
+                <a class="footer__btn" href="https://wa.me/79882915858">
+                  <img src="icons/whatsapp.svg" alt="whatsapp" />
+                  <span>Whatsapp</span>
+                </a>
+                <a class="footer__btn" href="tel:+79882915858">
+                  <img src="icons/telephone.svg" alt="telephone" />
+                  <span>8 (988) 291-58-58</span>
+                </a>
+              </div>
+            </div>
+            <div class="footer__link">
+              <h3>Производство мебельных коробов:</h3>
+              <div class="footer__btns">
+                <a class="footer__btn" href="https://wa.me/79886915858">
+                  <img src="icons/whatsapp.svg" alt="whatsapp" />
+                  <span>Whatsapp</span>
+                </a>
+                <a class="footer__btn" href="tel:+79886915858">
+                  <img src="icons/telephone.svg" alt="telephone" />
+                  <span>8 (988) 691-58-58</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__adress">Махачкала, проспект Казбекова 202</div>
+        <div class="footer__copyright">DaWoodov Store © 2024 г.</div>
       </div>
     </footer>
 

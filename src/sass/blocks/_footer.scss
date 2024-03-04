@@ -1,12 +1,104 @@
 .footer {
+  min-height: calc(100svh - 51.5px);
   background-color: #28292b;
+  color: #fff;
   padding-top: 95px;
   padding-bottom: 30px;
-
   color: #fff;
   &__title {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 0.9;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__subtitle {
+    font-size: 2rem;
     font-weight: 400;
     text-transform: uppercase;
+    text-align: center;
+  }
+  &__row {
+    margin-top: 57px;
+    display: flex;
+    justify-content: center;
+    column-gap: 200px;
+  }
+  &__link {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 700;
+    span {
+      color: #fff;
+    }
+  }
+  &__btns {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+  &__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    transition: all 0.4s ease-in-out;
+  }
+  &__btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 300px;
+  }
+  &__form-title {
+    font-size: 1.5rem;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+  &__form-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.35;
+  }
+  &__form-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+  }
+  &__adress {
+    margin-top: 57px;
+  }
+  &__adress,
+  &__copyright {
+    text-align: center;
+  }
+}
+
+.input,
+.textarea {
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 300px;
+  color: #000;
+  background: #fff;
+  outline: none;
+}
+
+@media (hover: hover) {
+  .footer__btn:hover::after {
+    transform: scaleX(1);
   }
 }
