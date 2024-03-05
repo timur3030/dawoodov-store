@@ -32,12 +32,15 @@
     padding: 19px 28.5px;
     transition: all 0.5s;
   }
-  &__btn:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
   &__img {
     // height: 510px;
     min-height: calc(100svh - 279.5px);
     background: url(../img/kitchen.webp) center center/cover no-repeat;
+  }
+}
+
+@media (hover: hover) {
+  .kitchens__btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
   }
 }

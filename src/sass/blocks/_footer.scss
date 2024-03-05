@@ -1,28 +1,28 @@
 .footer {
-  min-height: calc(100svh - 51.5px);
   background-color: #28292b;
-  color: #fff;
   padding-top: 95px;
   padding-bottom: 30px;
-  color: #fff;
+  color: #a9a9aa;
   &__title {
     font-size: 3.5rem;
     font-weight: 400;
     line-height: 0.9;
-    text-transform: uppercase;
-    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fff;
   }
   &__subtitle {
     font-size: 2rem;
     font-weight: 400;
     text-transform: uppercase;
-    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fff;
+    margin-bottom: 50px;
   }
   &__row {
     margin-top: 57px;
     display: flex;
-    justify-content: center;
-    column-gap: 200px;
+    justify-content: space-between;
+    column-gap: 50px;
   }
   &__link {
     margin-top: 30px;
@@ -32,6 +32,12 @@
     span {
       color: #fff;
     }
+  }
+  &__num-title {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #fff;
   }
   &__btns {
     margin-top: 5px;
@@ -64,41 +70,50 @@
     width: 300px;
   }
   &__form-title {
-    font-size: 1.5rem;
-    line-height: 1.35;
-    font-weight: 700;
-  }
-  &__form-text {
-    margin-top: 20px;
     font-size: 1.2rem;
-    line-height: 1.35;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
   }
   &__form-btn {
-    margin-top: 20px;
     padding: 10px 20px;
     border: 1px solid #fff;
+    transition: all 0.5s;
+    color: #fff;
   }
-  &__adress {
-    margin-top: 57px;
-  }
-  &__adress,
   &__copyright {
+    margin-top: 60px;
     text-align: center;
   }
 }
 
 .input,
 .textarea {
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 10px 20px;
   width: 300px;
-  color: #000;
-  background: #fff;
+  color: #fff;
+  background: #5e5f60;
   outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #bbbbbb;
 }
 
 @media (hover: hover) {
   .footer__btn:hover::after {
     transform: scaleX(1);
+  }
+  .footer__form-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }

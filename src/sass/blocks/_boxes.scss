@@ -32,9 +32,6 @@
     padding: 19px 28.5px;
     transition: all 0.5s;
   }
-  &__btn:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
   &__img {
     min-height: calc(100svh - 279.5px);
     background: url(../img/box.webp) center center/cover no-repeat;
@@ -51,5 +48,11 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.45);
+  }
+}
+
+@media (hover: hover) {
+  .boxes__btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
   }
 }
