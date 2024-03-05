@@ -1,17 +1,19 @@
 .news {
   padding: 114px 0;
+  scroll-margin-top: 51.5px;
   &__content {
-    width: 720px;
+    width: 840px;
     margin: 0 auto;
   }
   &__title {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 4rem;
     font-weight: 300;
-    line-height: 1;
+    line-height: 1.2;
+    margin-top: 23.2px;
   }
-  &__video {
-    height: 405px;
-    margin-top: 114px;
+  &__img {
+    min-height: calc(100svh - 379.5px);
+    background: url(../img/gif.gif) center center/cover no-repeat;
   }
 }

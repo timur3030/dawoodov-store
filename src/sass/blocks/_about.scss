@@ -1,18 +1,31 @@
 .about {
-  display: flex;
-  justify-content: center;
   padding-top: 114px;
-  font-size: 19px;
+  scroll-margin-top: 51.5px;
+  &__content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1.3fr;
+  }
+  &__text {
+    padding: 0 28.5px;
+    text-align: start;
+  }
   &__title {
     font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
     font-weight: 300;
     font-size: 4rem;
-    margin-bottom: 50px;
+    line-height: 0.85;
   }
-  &__content {
-    max-width: 720px;
+  &__info {
+    margin-top: 57px;
+    font-size: 1.2rem;
+    line-height: 1.4;
   }
-  p {
-    margin-top: 25px;
+  &__video {
+    width: 100%;
+    min-height: calc(100svh - 279.5px);
+    background-size: cover;
+    background-size: contain;
   }
 }
